@@ -1,1 +1,1 @@
-# edteam-course-typescript
+# edteam-course-typescript-desde-cero

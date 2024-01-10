@@ -1,5 +1,11 @@
-function Decorator(target: Object) {
-  console.log("Im a decorator");
+function Decorator(target: any) {
+  target.prototype.email = "lorem@ipsum.com";
+}
+
+interface User {
+  name: string;
+  age: number;
+  email: string;
 }
 
 @Decorator
@@ -12,3 +18,6 @@ class User {
     this.age = 0;
   }
 }
+
+const user3 = new User();
+console.log(user3);
