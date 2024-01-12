@@ -1,4 +1,8 @@
 function Decorator(target: any) {
+  target.prototype.dni = new Map();
+  target.prototype.generateKey = function () {
+    target.prototype.email = '';
+  };
   target.prototype.email = "lorem@ipsum.com";
 }
 
